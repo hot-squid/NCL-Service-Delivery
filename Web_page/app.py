@@ -9,7 +9,7 @@ tab1, tab2 = st.tabs(["Service Locations", "Choropleth"])
 # Display the service locations map
 with tab1:
     st.subheader("Service Locations")
-    with open(https://raw.githubusercontent.com/hot-squid/NCL-Service-Delivery/main/Web_page/Basic.html", "r") as f:
+    with open("https://raw.githubusercontent.com/hot-squid/NCL-Service-Delivery/main/Web_page/Basic.html", "r") as f:
         service_map_html = f.read()
     components.html(service_map_html, height=500)
 
