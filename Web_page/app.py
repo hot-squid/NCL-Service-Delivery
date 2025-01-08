@@ -9,14 +9,14 @@ tab1, tab2 = st.tabs(["Service Locations", "Choropleth"])
 # Display the service locations map
 with tab1:
     st.subheader("Service Locations")
-    with open("https://raw.githubusercontent.com/hot-squid/NCL-Service-Delivery/main/Web_page/Basic.html", "r") as f:
+    with open("https://github.com/hot-squid/NCL-Service-Delivery/blob/main/Web_page/Basic.html", "r") as f:
         service_map_html = f.read()
     components.html(service_map_html, height=500)
 
 # Display the cyclist casualties choropleth map
 with tab2:
     st.subheader("ADD: Choropleth of cycling incidents 2018-2022")
-    with open("https://raw.githubusercontent.com/hot-squid/NCL-Service-Delivery/main/Web_page/cloro.html", "r") as f:
+    with open("https://github.com/hot-squid/NCL-Service-Delivery/blob/main/Web_page/cloro.html", "r") as f:
         choropleth_map_html = f.read()
     components.html(choropleth_map_html, height=500)
 
